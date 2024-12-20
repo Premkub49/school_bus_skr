@@ -65,12 +65,12 @@
         var gendirec = false;
         function loadmaps() {
             var m;
-            $.getJSON("https://api.thingspeak.com/channels/2093164/fields/1/last.json?api_key=JX3SGT6TKMHMA824", function(result) {
+            $.getJSON("https://api.thingspeak.com/channels/2093164/fields/1/last.json?api_key=", function(result) {
                 m = result;
                 x = Number(m.field1);
                 // alert(x);
             });
-            $.getJSON("https://api.thingspeak.com/channels/2093164/fields/2/last.json?api_key=JX3SGT6TKMHMA824", function(result) {
+            $.getJSON("https://api.thingspeak.com/channels/2093164/fields/2/last.json?api_key=", function(result) {
                 m = result;
                 y = Number(m.field2);
 
